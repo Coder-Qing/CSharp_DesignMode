@@ -7,8 +7,9 @@ namespace _1_单例模式
     {
         static void Main(string[] args)
         {
+            //1、
             var single = Singleton.GetInstace();
-
+            //2、
             for (int i = 0; i < 10; i++)
             {
                 Task.Run(() =>
@@ -16,6 +17,8 @@ namespace _1_单例模式
                     var single2 = Singleton2.GetInstance();
                 });
             }
+            //3、
+            var single3 = Singleton3.instace;
 
             Console.ReadLine();
         }
@@ -91,6 +94,30 @@ namespace _1_单例模式
         #endregion 多线程Singleton
 
         #region C#中实现了单例模式的类
+
+        public sealed class Singleton3
+        {
+            // 它的一点弊端就是它不支持参数化的实例化方法。在.NET里静态构造器只能声明一个，而且必须是无参数的，私有的。因此这种方式只适用于无参数的构造器。
+            //需要说明的是：HttpContext.Current就是一个单例，他们是通过Singleton的扩展方式实现的，他们的单例也并不是覆盖所有领域，只是针对某些局部领域中，是单例的，不同的领域中还是会有不同的实例。
+            public static readonly Singleton3 instace = new Singleton3();
+
+            private Singleton3() { }
+        }
+
+        //以上是内联初始化（生成的同时进行初始化）的单例模式，它等同于：
+        //public sealed class Singleton
+        //{
+        //    public static readonly Singleton instance;
+
+        //    //静态构造函数，CLR只执行一次
+        //    static Singleton()
+        //    {
+        //        instance = new Singleton();
+        //    }
+
+        //    //私有构造函数，防止外界调用
+        //    private Singleton() { }
+        //}
 
         #endregion
 
