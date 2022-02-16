@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1、单例模式", "1、单例模式\1、单例模式.csproj", "{77246B6F-CB64-4D25-949B-3121B1901E71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1、单例模式", "1、单例模式\1、单例模式.csproj", "{77246B6F-CB64-4D25-949B-3121B1901E71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2、工厂方法模式", "2、工厂方法模式\2、工厂方法模式.csproj", "{957B7637-460B-454D-810F-88E4D833DED0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2、工厂方法模式", "2、工厂方法模式\2、工厂方法模式.csproj", "{957B7637-460B-454D-810F-88E4D833DED0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3、抽象工厂模式", "3、抽象工厂模式\3、抽象工厂模式.csproj", "{AA6E5873-B17C-4119-B8C0-FFE4C6575CE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3、抽象工厂模式", "3、抽象工厂模式\3、抽象工厂模式.csproj", "{AA6E5873-B17C-4119-B8C0-FFE4C6575CE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4、建造者模式", "4、建造者模式\4、建造者模式.csproj", "{5987F28C-15B0-4E28-ADEF-44FC1AD10FA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4、建造者模式", "4、建造者模式\4、建造者模式.csproj", "{5987F28C-15B0-4E28-ADEF-44FC1AD10FA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5、原型模式", "5、原型模式\5、原型模式.csproj", "{6E4B1EC4-13D1-40D6-BCA8-DCD0647D6835}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5、原型模式", "5、原型模式\5、原型模式.csproj", "{6E4B1EC4-13D1-40D6-BCA8-DCD0647D6835}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6、适配器模式", "6、适配器模式\6、适配器模式.csproj", "{8824EEB1-8AEE-4766-AB26-0655B61E7259}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{6E4B1EC4-13D1-40D6-BCA8-DCD0647D6835}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E4B1EC4-13D1-40D6-BCA8-DCD0647D6835}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E4B1EC4-13D1-40D6-BCA8-DCD0647D6835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8824EEB1-8AEE-4766-AB26-0655B61E7259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8824EEB1-8AEE-4766-AB26-0655B61E7259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8824EEB1-8AEE-4766-AB26-0655B61E7259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8824EEB1-8AEE-4766-AB26-0655B61E7259}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
